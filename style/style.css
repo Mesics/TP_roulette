@@ -1,0 +1,61 @@
+@font-face
+{
+	font-family:"PokerKings";
+	src:url('../police/PokerKings-Regular');
+}
+
+body
+{
+	text-align:center;
+	font-family:calibri, arial;
+
+	background-image: url("roulette.png");
+	background-color: #007B00;
+	
+}
+
+h1
+{
+	font-family:PokerKings, Calibri;
+	font-size:2.5em;
+	padding: 20px 0;
+	margin:0;
+	/* background-color: #007B00; */
+	
+	margin-bottom:50px;
+}
+
+h2
+{
+	margin-bottom:10px;
+}
+form input
+{
+	margin-bottom:5px;
+}
+#error
+{
+	font-size:0.7em;
+	color:red;
+	margin:0;
+	margin-left:50px;
+}
+
+#link
+{
+	text-align:right;
+	margin-right:6%;
+	margin-top:60px;
+	font-style:italic;
+}
+
+p a 
+{
+	text-decoration:none;
+	border-bottom: 1px dotted red;
+	color: red;	
+}
+p a:hover
+{
+	border-bottom:none;
+}
