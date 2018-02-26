@@ -1,11 +1,12 @@
+<!--  MACCAGNO Coralie - TP Roulette -->
+
+
 <?php 
 	session_start();
-	try {
-		$bdd= new PDO('mysql:host=iutdoua-web@univ-lyon1.fr;dbname=test;
-		charset=utf8', 'p1712543', '303111' );
-	}catch (Exception $e){
-		die('Erreur: '.$e->getMessage());
-	}
+	
+
+	require_once('bdd.php');
+
 	$error="";
 	
 	if (isset($_GET['deco'])){
