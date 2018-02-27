@@ -1,7 +1,7 @@
 <?php 
 	session_start();
 	
-	/* connexion à la base de données */
+	/* connexion à la base de données
 	function connexionBdd(){
 		try{
 			$bdd=new PDO('mysql:host=localhost;dname=p1408199;charset=utf8', 'p1408199', '216169');
@@ -35,25 +35,8 @@
 				$connexion = 'Veuillez remplir tous les champs';
 			}
 		}
-		$bdd = null;
-		return $connexion;
-	}
-	/* fonction d'ajout d'un utilisateur */
-	function ajoutUser($user, $pwd)
-	{
-		$bdd = connexionBdd();
-		if($bdd)
-		{
-			$requete = 'INSERT INTO p1408199.Player (name, password) 
-				values ("' . $user . '","'. $pwd .'";)';
-			$req=$bdd->prepare($requete);
-			$req->execute(
-				array(
-					
-		}	
-		$bdd=null;		
-	}
-		
+		$bdd=null;
+	} */
 	
 	$error="";
 	

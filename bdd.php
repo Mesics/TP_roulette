@@ -1,5 +1,5 @@
 <?php
-class bdd {
+class funcBdd {
 	
 	private $bdd;
 	private $host;
@@ -46,9 +46,20 @@ class bdd {
 	}
 	
 	/* méthode ajout utilisateur à base de données */
-	public function ajoutUser() {
-		/* blabla */
-	}
+	public function ajoutUser($user, $pwd)
+	{
+		$bdd=connexionBdd();
+		if($bdd)
+		{
+			$requete='INSERT INTO p1408199.Player(name, password) values(\''.$user.'\',\''.$pwd.'\');';
+			$req=$bdd->prepare($requete);
+			$req->execute(array(
+				'name' => $user,
+				'password' => $pwd
+			));
+		}
+		$bdd=null;
+	}	
 	
 	/* méthode de màj dun joueur dans la base de données */
 	public function majUser(){

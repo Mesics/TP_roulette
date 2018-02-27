@@ -5,8 +5,8 @@
 	session_start();
 	
 
-	//require_once('./bdd.php');
-	/* méthode d'initialisation du PDO */
+	require_once('bdd.php');
+/* méthode d'initialisation du PDO
 	function connexionBdd(){
 		try{
 			$bdd=new PDO('mysql:host=localhost;dname=p1408199;charset=utf8', 'p1408199', '216169');
@@ -17,8 +17,8 @@
 		}
 	}
 	
-	/* méthode de connexin de l'utilisateur */
-	function connexionUser($user, $pwd) {
+	/* méthode de connexin de l'utilisateur
+/*	function connexionUser($user, $pwd) {
 		$bdd = connexionBdd();
 		if($bdd) {
 			$reponse = $bdd->query('SELECT * FROM p1408199.Player WHERE name = "'.$user.'";');
@@ -43,7 +43,7 @@
 		}
 		$bdd = null;
 		return $connexion;
-	}
+	}*/
 	
 	
 	
@@ -65,7 +65,7 @@
 	/* vérification de l'identité */
 	if(isset($_POST['submit']))
 	{
-		$msg = connexionUser($_POST['user'], $_POST['passwd']);
+		$msg = $funcBdd->connexionUser($_POST['user'], $_POST['passwd']);
 		
 		if ($msg!='ok')
 			$error=$msg;
@@ -84,9 +84,7 @@
 	
 	<body>
 		<?php 
-			//$requete= 'SELECT * FROM Player';
-			//$reponse = $bdd->query($requete);
-			//echo $reponse;
+			if($error!="") echo $error;
 		?>
 		<h1>Jeu de la Roulette</h1>
 		<h2>Connexion</h2>
