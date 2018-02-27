@@ -1,0 +1,77 @@
+[27-Feb-2018 14:15:38 Europe/Paris] PHP Parse error:  syntax error, unexpected end of file in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/bdd.php on line 43
+[27-Feb-2018 14:15:38 Europe/Paris] PHP Parse error:  syntax error, unexpected end of file in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/bdd.php on line 43
+[27-Feb-2018 14:19:20 Europe/Paris] PHP Parse error:  syntax error, unexpected end of file in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/bdd.php on line 39
+[27-Feb-2018 14:19:43 Europe/Paris] PHP Parse error:  syntax error, unexpected end of file in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/bdd.php on line 38
+[27-Feb-2018 14:20:35 Europe/Paris] PHP Parse error:  syntax error, unexpected end of file in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/bdd.php on line 38
+[27-Feb-2018 14:20:37 Europe/Paris] PHP Parse error:  syntax error, unexpected end of file in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/bdd.php on line 38
+[27-Feb-2018 14:25:40 Europe/Paris] PHP Notice:  Undefined variable: bdd in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 46
+[27-Feb-2018 14:25:40 Europe/Paris] PHP Fatal error:  Call to a member function query() on a non-object in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 46
+[27-Feb-2018 14:29:48 Europe/Paris] PHP Parse error:  syntax error, unexpected ')' in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 16
+[27-Feb-2018 14:59:38 Europe/Paris] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 30
+[27-Feb-2018 14:59:56 Europe/Paris] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/bdd.php on line 50
+[27-Feb-2018 15:00:33 Europe/Paris] PHP Fatal error:  Call to undefined function connexionUser() in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 28
+[27-Feb-2018 15:01:47 Europe/Paris] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 10
+[27-Feb-2018 15:02:07 Europe/Paris] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 25
+[27-Feb-2018 15:03:31 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:03:31 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:04:02 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:04:02 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:04:26 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:04:26 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:04:28 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:04:28 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:04:34 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:04:34 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:07:21 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:07:21 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:07:23 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:07:23 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:07:24 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:07:24 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:07:27 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:07:27 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:07:31 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:07:31 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:07:35 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:07:35 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:07:39 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:07:39 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:08:05 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:08:05 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:08:07 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:08:07 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:08:19 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:08:19 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:11:40 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:11:40 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:11:44 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:11:44 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:11:48 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:11:48 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:18:00 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:18:00 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:18:07 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:18:07 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:19:22 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:19:22 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:19:26 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:19:26 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:21:09 Europe/Paris] PHP Fatal error:  Call to undefined function connexionUser() in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 68
+[27-Feb-2018 15:23:06 Europe/Paris] PHP Fatal error:  Call to undefined function connexionUser() in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 68
+[27-Feb-2018 15:35:46 Europe/Paris] PHP Notice:  Undefined variable: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 62
+[27-Feb-2018 15:35:46 Europe/Paris] PHP Notice:  Undefined variable: passwd in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 62
+[27-Feb-2018 15:35:46 Europe/Paris] PHP Notice:  Undefined variable: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 63
+[27-Feb-2018 15:35:46 Europe/Paris] PHP Notice:  Undefined variable: passwd in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 63
+[27-Feb-2018 15:35:46 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:35:46 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:36:53 Europe/Paris] PHP Notice:  Undefined index: $user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 62
+[27-Feb-2018 15:36:53 Europe/Paris] PHP Notice:  Undefined index: $passwd in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 62
+[27-Feb-2018 15:36:53 Europe/Paris] PHP Notice:  Undefined index: $user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 63
+[27-Feb-2018 15:36:53 Europe/Paris] PHP Notice:  Undefined index: $passwd in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 63
+[27-Feb-2018 15:36:53 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 67
+[27-Feb-2018 15:36:53 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 68
+[27-Feb-2018 15:38:13 Europe/Paris] PHP Notice:  Undefined index: $user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 62
+[27-Feb-2018 15:38:13 Europe/Paris] PHP Notice:  Undefined index: $passwd in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 62
+[27-Feb-2018 15:38:13 Europe/Paris] PHP Notice:  Undefined index: $user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 63
+[27-Feb-2018 15:38:13 Europe/Paris] PHP Notice:  Undefined index: $passwd in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 63
+[27-Feb-2018 16:00:55 Europe/Paris] PHP Parse error:  syntax error, unexpected '}' in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 51

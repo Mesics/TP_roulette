@@ -1,42 +1,63 @@
 <?php
-	function connexionBdd(){
+class bdd {
+	
+	private $bdd;
+	private $host;
+	private $user;
+	private $pwd;
+	
+	/* méthode d'initialisation du PDO */
+	public function connexionBdd(){
 		try{
-			$bdd=new PDO('mysql:host=iutdoua-web.univ-lyon1.fr;dname=test;charset=utf8', 'p1408199', '216169');
+			$bdd=new PDO('mysql:host=localhost;dname=p1408199;charset=utf8', 'p1408199', '216169');
 			return $bdd;
 		}catch (Exception $e){
 			die('Erreur connexion : ' . $e->getMessage());
 			return false;
 		}
-
-	function connexionJoueur($user, $pwd) {
+	}
+	
+	/* méthode de connexin de l'utilisateur */
+	public function connexionUser($user, $pwd) {
 		$bdd = connexionBdd();
 		if($bdd) {
-			$query = $bdd->query('SELECT * FROM Player WHERE name = "'.$user.'";');
-			$data = $query->fetch();
+			$reponse = $bdd->query('SELECT * FROM p1408199.Player WHERE name = "'.$user.'";');
+			$data = $reponse->fetch();
+			
 			if($user != '' and $pwd != '') {
-
 				if($data['name'] == $user) {
 					if($data['password'] == $pwd) {
 						$_SESSION['idUser'] = $data['id'];
-						$_SESSION['nameUser'] = $data['name'];
-
-					$_SESSION['joueur_argent'] = $data['argent'];
-					$res = 'ok';
+						$_SESSION['user'] = $data['name'];
+						$_SESSION['money'] = $data['money'];
+						$connexion = 'ok';
+					} else {
+						$connexion = 'Mot de passe éronné';
+					}
 				} else {
-					$res = 'Mot de passe éronné';
+					$connexion = 'Utilisateur inconnu';
 				}
 			} else {
-				$res = 'Utilisateur inconnu';
+				$connexion = 'Veuillez remplir tous les champs';
 			}
-		} else {
-			$res = 'Vous devez remplir les champs';
 		}
+		$bdd = null;
+		return $connexion;
 	}
-	$bdd = null;
-	return $res;
+	
+	/* méthode ajout utilisateur à base de données */
+	public function ajoutUser() {
+		/* blabla */
+	}
+	
+	/* méthode de màj dun joueur dans la base de données */
+	public function majUser(){
+		
+		
+	}
+	
+	/*méthode ajout de partie dans la bdd */
+	public function ajoutPartie() {
+		
+	}
 }
-
-
-
-
-?>
