@@ -16,9 +16,9 @@ class BaseDeDonnees {
 	}
 	
 	/* Getters */
-	public function getHote(){ return this->$hote;}
-	public function getUser() {return this->$user;}
-	public function getPwd() {return this->$pwd;}
+	public function getHote(){ return $this->hote;}
+	public function getUser() {return $this->user;}
+	public function getPwd() {return $this->pwd;}
 	
 	/* Setters */
 	public function setHote($hote1) { $this->hote = $hote1; }
@@ -38,7 +38,7 @@ class BaseDeDonnees {
 	
 	/* méthode de connexin de l'utilisateur */
 	public function connexionUser($user, $pwd) {
-		$this->bdd = connexionBdd();
+		//$this->bdd = connexionBdd();
 		if($this->bdd) {
 			$reponse = $this->bdd->query('SELECT * FROM p1408199.Player WHERE name = "'.$user.'";');
 			$data = $reponse->fetch();
@@ -49,38 +49,38 @@ class BaseDeDonnees {
 						$_SESSION['idUser'] = $data['id'];
 						$_SESSION['user'] = $data['name'];
 						$_SESSION['money'] = $data['money'];
-						$connexion = 'ok';
+						$errorCo = 'ok';
 					} else {
-						$connexion = 'Mot de passe éronné';
+						$errorCo = 'Mot de passe éronné';
 					}
 				} else {
-					$connexion = 'Utilisateur inconnu';
+					$errorCo = 'Utilisateur inconnu';
 				}
 			} else {
-				$connexion = 'Veuillez remplir tous les champs';
+				$errorCo = 'Veuillez remplir tous les champs';
 			}
 		}
-		$this->bdd = null;
-		return $connexion;
+		//$this->bdd = null;
+		return $errorCo;
 	}
 	
 	/* méthode ajout utilisateur à base de données */
 	public function ajoutUser($user1, $pwd1)
 	{
-		//$this->bdd=connexionBdd();
-		if($this->bdd)
-		{
-			$requete='INSERT INTO p1408199.Player(name, password) values(?,?)';
-			$req=$this->bdd->prepare($requete);
-			$req->execute(array($user, $pwd));
-		}
-		//$bdd=null;
+		$requete='INSERT INTO p1408199.Player(name, password) values(?,?)';
+		$req=$this->bdd->prepare($requete);
+		$req->execute(array($user1, $pwd1));
 	}	
 	
-	/* méthode de màj dun joueur dans la base de données */
-	public function majUser(){
-		
-		
+	/* méthode de màj d'un joueur dans la base de données */
+	public function majUser($money, $user1,$pwd1){
+		$requete='UPDATE Player SET money=:t_money where user=:t_user and password=:t_pwd;';
+		$req=$this->bdd->prepare($requete);
+		$req->execute(array(
+			:t_money => $money, 
+			:t_user => $user1, 
+			:t_pwd => $pwd1
+			));		
 	}
 	
 	/*méthode ajout de partie dans la bdd */

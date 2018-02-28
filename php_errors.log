@@ -75,3 +75,9 @@
 [27-Feb-2018 15:38:13 Europe/Paris] PHP Notice:  Undefined index: $user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 63
 [27-Feb-2018 15:38:13 Europe/Paris] PHP Notice:  Undefined index: $passwd in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 63
 [27-Feb-2018 16:00:55 Europe/Paris] PHP Parse error:  syntax error, unexpected '}' in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 51
+[28-Feb-2018 15:47:38 Europe/Paris] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/UNIV-LYON1/p1704133/public_html/TP_roulette/bdd.php on line 19
+[28-Feb-2018 15:48:54 Europe/Paris] PHP Fatal error:  Call to undefined function connexionBdd() in /home/UNIV-LYON1/p1704133/public_html/TP_roulette/bdd.php on line 41
+[28-Feb-2018 15:51:19 Europe/Paris] PHP Notice:  Undefined variable: user in /home/UNIV-LYON1/p1704133/public_html/TP_roulette/bdd.php on line 75
+[28-Feb-2018 15:51:19 Europe/Paris] PHP Notice:  Undefined variable: pwd in /home/UNIV-LYON1/p1704133/public_html/TP_roulette/bdd.php on line 75
+[28-Feb-2018 16:02:29 Europe/Paris] PHP Notice:  Undefined index: passwd in /home/UNIV-LYON1/p1704133/public_html/TP_roulette/roulette.php on line 48
+[28-Feb-2018 16:02:29 Europe/Paris] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/UNIV-LYON1/p1704133/public_html/TP_roulette/bdd.php on line 79

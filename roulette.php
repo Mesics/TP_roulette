@@ -6,7 +6,7 @@
 	$bdd = new BaseDeDonnees('localhost','p1408199','216169');
 	$bdd->connexionBdd();
 	
-	
+	/* si il n'y a pas de session ouverte on redirige vers l'acceuil */
 	if(!isset($_SESSION['user']))
 		header('Location: index.php');
 
@@ -45,6 +45,7 @@
 				} else $jeu="Veuillez jouer un nombre ou une parité !";
 			}
 		} else $jeu="Veuillez rentrer une mise valide";
+		$bdd->majUser($_SESSION['money'],$_SESSION['user'],$_SESSION['passwd']);
 	}
 ?>
 
