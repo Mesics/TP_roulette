@@ -1,6 +1,11 @@
 <?php 
 
 	session_start();
+	require_once('bdd.php');
+	/* connexion à la base de données */
+	$bdd = new BaseDeDonnees('localhost','p1408199','216169');
+	$bdd->connexionBdd();
+	
 	
 	if(!isset($_SESSION['user']))
 		header('Location: index.php');

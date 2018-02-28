@@ -4,53 +4,16 @@
 <?php 
 	session_start();
 	
-
 	require_once('bdd.php');
-/* méthode d'initialisation du PDO
-	function connexionBdd(){
-		try{
-			$bdd=new PDO('mysql:host=localhost;dname=p1408199;charset=utf8', 'p1408199', '216169');
-			return $bdd;
-		}catch (Exception $e){
-			die('Erreur connexion : ' . $e->getMessage());
-			return false;
-		}
-	}
 	
-	/* méthode de connexin de l'utilisateur
-/*	function connexionUser($user, $pwd) {
-		$bdd = connexionBdd();
-		if($bdd) {
-			$reponse = $bdd->query('SELECT * FROM p1408199.Player WHERE name = "'.$user.'";');
-			$data = $reponse->fetch();
-			
-			if($user != '' and $pwd != '') {
-				if($data['name'] == $user) {
-					if($data['password'] == $pwd) {
-						$_SESSION['idUser'] = $data['id'];
-						$_SESSION['user'] = $data['name'];
-						$_SESSION['money'] = $data['money'];
-						$connexion = 'ok';
-					} else {
-						$connexion = 'Mot de passe éronné';
-					}
-				} else {
-					$connexion = 'Utilisateur inconnu';
-				}
-			} else {
-				$connexion = 'Veuillez remplir tous les champs';
-			}
-		}
-		$bdd = null;
-		return $connexion;
-	}*/
-	
-	
-	
+	/* connexion à la base de données */
+	$basedonnee = new BaseDeDonnees('localhost','p1408199','216169');
+	$basedonnee->connexionBdd();
+
 	$error="";
 	
 	/* Quand on appuie sur le bouton déconnexion de la page du 
-	jeu ; on vide toutes les sessions */
+	jeu :  on vide toutes les sessions */
 	if (isset($_GET['deco'])){
 		##on vide la session
 		unset($_SESSION['user']);
@@ -65,7 +28,7 @@
 	/* vérification de l'identité */
 	if(isset($_POST['submit']))
 	{
-		$msg = $funcBdd->connexionUser($_POST['user'], $_POST['passwd']);
+		$msg = $basedonnee->connexionUser($_POST['user'], $_POST['passwd']);
 		
 		if ($msg!='ok')
 			$error=$msg;

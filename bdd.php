@@ -1,27 +1,46 @@
 <?php
-class funcBdd {
+class BaseDeDonnees {
 	
-	private $bdd;
+	private $bdd=null;
 	private $host;
 	private $user;
 	private $pwd;
+	private $erreur="";
+	
+	/*constructeur de la classe bdd */
+	public function __construct($hote, $user, $pwd)
+	{
+		$this->hote=$hote;
+		$this->user=$user;
+		$this->pwd=$pwd;		
+	}
+	
+	/* Getters */
+	public function getHote(){ return this->$hote;}
+	public function getUser() {return this->$user;}
+	public function getPwd() {return this->$pwd;}
+	
+	/* Setters */
+	public function setHote($hote1) { $this->hote = $hote1; }
+	public function setUser($user1) { $this->user = $user1; }
+	public function setPwd($pwd1) { $this->pwd = $pwd1; }
 	
 	/* méthode d'initialisation du PDO */
 	public function connexionBdd(){
 		try{
-			$bdd=new PDO('mysql:host=localhost;dname=p1408199;charset=utf8', 'p1408199', '216169');
-			return $bdd;
+			$this->bdd=new PDO('mysql:host='.$this->hote.';dname=p1408199;charset=utf8', $this->user, $this->pwd);
+			//return $this->bdd;
 		}catch (Exception $e){
 			die('Erreur connexion : ' . $e->getMessage());
-			return false;
+			//return false;
 		}
 	}
 	
 	/* méthode de connexin de l'utilisateur */
 	public function connexionUser($user, $pwd) {
-		$bdd = connexionBdd();
-		if($bdd) {
-			$reponse = $bdd->query('SELECT * FROM p1408199.Player WHERE name = "'.$user.'";');
+		$this->bdd = connexionBdd();
+		if($this->bdd) {
+			$reponse = $this->bdd->query('SELECT * FROM p1408199.Player WHERE name = "'.$user.'";');
 			$data = $reponse->fetch();
 			
 			if($user != '' and $pwd != '') {
@@ -41,24 +60,21 @@ class funcBdd {
 				$connexion = 'Veuillez remplir tous les champs';
 			}
 		}
-		$bdd = null;
+		$this->bdd = null;
 		return $connexion;
 	}
 	
 	/* méthode ajout utilisateur à base de données */
-	public function ajoutUser($user, $pwd)
+	public function ajoutUser($user1, $pwd1)
 	{
-		$bdd=connexionBdd();
-		if($bdd)
+		//$this->bdd=connexionBdd();
+		if($this->bdd)
 		{
-			$requete='INSERT INTO p1408199.Player(name, password) values(\''.$user.'\',\''.$pwd.'\');';
-			$req=$bdd->prepare($requete);
-			$req->execute(array(
-				'name' => $user,
-				'password' => $pwd
-			));
+			$requete='INSERT INTO p1408199.Player(name, password) values(?,?)';
+			$req=$this->bdd->prepare($requete);
+			$req->execute(array($user, $pwd));
 		}
-		$bdd=null;
+		//$bdd=null;
 	}	
 	
 	/* méthode de màj dun joueur dans la base de données */

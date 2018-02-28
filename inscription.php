@@ -1,42 +1,10 @@
 <?php 
 	session_start();
-	
-	/* connexion à la base de données
-	function connexionBdd(){
-		try{
-			$bdd=new PDO('mysql:host=localhost;dname=p1408199;charset=utf8', 'p1408199', '216169');
-			return $bdd;
-		}catch (Exception $e){
-			die('Erreur connexion : ' . $e->getMessage());
-			return false;
-		}
-	}
-	
-	function connexionUser($user, $pwd) {
-		$bdd = connexionBdd();
-		if($bdd) {
-			$reponse = $bdd->query('SELECT * FROM p1408199.Player WHERE name = "'.$user.'";');
-			$data = $reponse->fetch();
-			
-			if($user != '' and $pwd != '') {
-				if($data['name'] == $user) {
-					if($data['password'] == $pwd) {
-						$_SESSION['idUser'] = $data['id'];
-						$_SESSION['user'] = $data['name'];
-						$_SESSION['money'] = $data['money'];
-						$connexion = 'ok';
-					} else {
-						$connexion = 'Mot de passe éronné';
-					}
-				} else {
-					$connexion = 'Utilisateur inconnu';
-				}
-			} else {
-				$connexion = 'Veuillez remplir tous les champs';
-			}
-		}
-		$bdd=null;
-	} */
+	require_once('bdd.php');
+
+	/* connexion à la base de données */
+	$bdd = new BaseDeDonnees('localhost','p1408199','216169');
+	$bdd->connexionBdd();
 	
 	$error="";
 	
@@ -44,10 +12,10 @@
 	{		
 		if(isset($_POST['user']) && $_POST['user']!="")
 		{
-			if(isset($_POST['passwd']) && $_POST['passwd']!="")
+			if(isset($_POST['passwd']) && ($_POST['passwd']!=""))
 			{
-				ajoutUser($_POST['user'], $_POST['passwd']);
-				$msg=connexionUser($_POST['user'], $_POST['passwd']);
+				$bdd->ajoutUser($_POST['user'], $_POST['passwd']);
+				$msg= ($bdd->connexionUser($_POST['user'], $_POST['passwd']));
 				if($msg!='ok')
 					$error=$msg;
 				else
@@ -71,14 +39,17 @@
 			<input type="text" name="user" placeholder="Identifiant" autofocus /><br/>
 			<input type="password" name="passwd" placeholder="Mot de passe" /><br/>
 			<?php
-				if($error!="") echo "<p id='error'> " . $error . "</p>";
+				if($error!="") 
+					echo "<p id='error'> " . $error . "</p>";
 			?>
 			<input type="submit" value="Envoyer" name="submit" />
 			<input type="reset" value="Effacer" name="reset" />
 		</form>
 
 		<p id='link'>Déjà membre de notre super jeu ? <a href="index.php">Connecte toi</a> </p>
-
+	
 	</body>
+
+
 	
 </html>
