@@ -12,15 +12,20 @@
 	{		
 		if(isset($_POST['user']) && $_POST['user']!="")
 		{
-			if(isset($_POST['passwd']) && ($_POST['passwd']!=""))
-			{
-				$bdd->ajoutUser($_POST['user'], $_POST['passwd']);
-				$msg= ($bdd->connexionUser($_POST['user'], $_POST['passwd']));
-				if($msg!='ok')
-					$error=$msg;
-				else
-					header('Location: roulette.php');
-			} else $error='Veuillez entrer un mot de passe';
+			
+				if(isset($_POST['passwd']) && ($_POST['passwd']!=""))
+				{
+					$msgAdd=$bdd->ajoutUser($_POST['user'], $_POST['passwd']);
+					if ($msgAdd!='')	$error=$msgAdd;
+					else
+					{
+						$msgCo = ($bdd->connexionUser($_POST['user'], $_POST['passwd']));
+						
+						if($msg!='ok')	$error=$msg;
+						else	header('Location: roulette.php');
+					}
+				} else $error='Veuillez entrer un mot de passe';
+			
 		} else $error='Veuillez entrer un identifiant';
 	}		
 ?>

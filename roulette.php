@@ -13,39 +13,57 @@
 	$jeu="";
 	$result="";
 	$tirageR=0;
+	$gain=0;
+	
 	if(isset($_POST['play']))
-	{
+	{ //quand on appuie sur le bouton jouer ...
+
 		if(isset($_POST['mise']) && $_POST['mise']!="" && $_POST['mise']<=$_SESSION['money'])
-		{
+		{ //vérification que la mise existe et soit valide
+	
 			if(isset($_POST['numero']) && $_POST['numero']!="")
-			{
+			{ // si le joueur a rentré un numéro, on suppose qu'il joue sur ce numéro
+				
+				/* tirage aléatoire d'un nb entre 1 et 36 */
 				$tirageR=rand(1,36);
+				
+				/* vérif de l'égalité sur nb sur lequel on a misé et celui tiré au sort */
 				if($_POST['numero']==$tirageR)
 				{
+					$gain=$_POST['mise']*35;
 					$result="Bravo, Vous avez gagné 35x votre mise !";
-					$_SESSION['money']+=$_POST['mise']*35;
 				} else {
+					$gain=-$_POST['mise'];
 					$result="Dommage, c'est perdu...";
-					$_SESSION['money']-=$_POST['mise'];
 				}
-			
-			} else {
+				$_SESSION['money']+=$gain;
 				
+			} else {
+			/* si aucun nombre n'est rentré et qu'un bouton "parité" est actif alors on teste sur la parité */
 				if( isset($_POST['parite']) )
 				{
+					/* on tire un nb au sort et on vérifie si il est pair ou non et si 
+					on a misé sur la bonne parité */
 					$tirageR=rand(1,36);
 					if( ($_POST['parite']=='pair' && $tirageR%2==0 ) || ($_POST['parite']=="impair" && ($tirageR%2)==1) )
 					{
+						$gain=$_POST['mise']*2;
 						$result="Bravo, vous avez gagné 2x votre mise !";
-						$_SESSION['money']+=$_POST['mise']*2;
 					} else {
+						$gain=-$_POST['mise'];
 						$result="Dommage, c'est perdu...";
-						$_SESSION['money']-=$_POST['mise'];
 					}
+					$_SESSION['money']+=$gain;
+
 				} else $jeu="Veuillez jouer un nombre ou une parité !";
 			}
 		} else $jeu="Veuillez rentrer une mise valide";
-		$bdd->majUser($_SESSION['money'],$_SESSION['user'],$_SESSION['passwd']);
+		
+		/* mise à jour de l'argent du joueur */
+		$bdd->majUser($_SESSION['money'],$_SESSION['user']);
+		
+		/* ajout de la partie dans la base de données */
+		$bdd->ajoutPartie($_SESSION['user'],$_POST['mise'],$gain);
 	}
 ?>
 
@@ -61,7 +79,7 @@
 		<header>
 			<h1>Jeu de la Roulette</h1>
 		</header>
-
+	
 		<main>			
 			<?php
 				if($result!="")

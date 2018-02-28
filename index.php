@@ -29,7 +29,6 @@
 	if(isset($_POST['submit']))
 	{
 		$msg = $basedonnee->connexionUser($_POST['user'], $_POST['passwd']);
-		
 		if ($msg!='ok')
 			$error=$msg;
 		else 
@@ -46,9 +45,7 @@
 	</head>
 	
 	<body>
-		<?php 
-			if($error!="") echo $error;
-		?>
+
 		<h1>Jeu de la Roulette</h1>
 		<h2>Connexion</h2>
 
