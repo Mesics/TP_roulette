@@ -4,7 +4,7 @@
 <h1>Jeu de la Roulette</h1>
 <h2>Connexion</h2>
 
-<form method="post" action="index.php">
+<form method="post" action="../controller/frontController.php">
 	<input type="text" name="user" placeholder="Identifiant" autofocus /><br/>
 	<input type="password" name="passwd" placeholder="Mot de passe" /><br/>
 	
@@ -12,7 +12,7 @@
 		<p id='error'> <?= $error ?> </p>
 	<?php endif ?>
 	
-	<input type="submit" value="Envoyer" name="submit" />
+	<input type="submit" value="Envoyer" name="submitCo" />
 	<input type="reset" value="Effacer" name="reset" />
 </form>
 

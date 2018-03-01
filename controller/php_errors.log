@@ -1,0 +1,62 @@
+[01-Mar-2018 11:38:54 Europe/Paris] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/controller/frontController.php on line 86
+[01-Mar-2018 11:39:07 Europe/Paris] PHP Warning:  require_once(bdd.php): failed to open stream: No such file or directory in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/controller/frontController.php on line 6
+[01-Mar-2018 11:39:07 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required 'bdd.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/controller/frontController.php on line 6
+[01-Mar-2018 11:39:36 Europe/Paris] PHP Warning:  require_once(baseDeDonnees.php): failed to open stream: No such file or directory in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/controller/frontController.php on line 6
+[01-Mar-2018 11:39:36 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required 'baseDeDonnees.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/controller/frontController.php on line 6
+[01-Mar-2018 11:39:51 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[01-Mar-2018 11:39:51 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 10
+[01-Mar-2018 11:39:51 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 11
+[01-Mar-2018 11:39:51 Europe/Paris] PHP Notice:  Undefined variable: jeu in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 27
+[01-Mar-2018 11:39:51 Europe/Paris] PHP Parse error:  syntax error, unexpected ''.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 14
+[01-Mar-2018 11:42:35 Europe/Paris] PHP Parse error:  syntax error, unexpected ''.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 14
+[01-Mar-2018 11:45:08 Europe/Paris] PHP Parse error:  syntax error, unexpected ''.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 14
+[01-Mar-2018 11:50:00 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[01-Mar-2018 11:50:00 Europe/Paris] PHP Notice:  Undefined variable: jeu in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 27
+[01-Mar-2018 11:50:00 Europe/Paris] PHP Parse error:  syntax error, unexpected ''.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 14
+[01-Mar-2018 11:51:07 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[01-Mar-2018 11:51:07 Europe/Paris] PHP Notice:  Undefined variable: jeu in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 27
+[01-Mar-2018 11:51:07 Europe/Paris] PHP Parse error:  syntax error, unexpected ''.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 14
+[01-Mar-2018 11:51:09 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[01-Mar-2018 11:51:09 Europe/Paris] PHP Notice:  Undefined variable: jeu in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 27
+[01-Mar-2018 11:51:09 Europe/Paris] PHP Parse error:  syntax error, unexpected ''.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 14
+[01-Mar-2018 11:51:10 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[01-Mar-2018 11:51:10 Europe/Paris] PHP Notice:  Undefined variable: jeu in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 27
+[01-Mar-2018 11:51:10 Europe/Paris] PHP Parse error:  syntax error, unexpected ''.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 14
+[01-Mar-2018 11:51:11 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[01-Mar-2018 11:51:11 Europe/Paris] PHP Notice:  Undefined variable: jeu in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 27
+[01-Mar-2018 11:51:11 Europe/Paris] PHP Parse error:  syntax error, unexpected ''.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 14
+[01-Mar-2018 11:51:12 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[01-Mar-2018 11:51:12 Europe/Paris] PHP Notice:  Undefined variable: jeu in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 27
+[01-Mar-2018 11:51:12 Europe/Paris] PHP Parse error:  syntax error, unexpected ''.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 14
+[01-Mar-2018 11:51:12 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[01-Mar-2018 11:51:12 Europe/Paris] PHP Notice:  Undefined variable: jeu in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 27
+[01-Mar-2018 11:51:12 Europe/Paris] PHP Parse error:  syntax error, unexpected ''.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 14
+[01-Mar-2018 11:51:13 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[01-Mar-2018 11:51:13 Europe/Paris] PHP Notice:  Undefined variable: jeu in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 27
+[01-Mar-2018 11:51:13 Europe/Paris] PHP Parse error:  syntax error, unexpected ''.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 14
+[01-Mar-2018 11:51:45 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[01-Mar-2018 11:51:45 Europe/Paris] PHP Notice:  Undefined variable: jeu in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 27
+[01-Mar-2018 11:51:45 Europe/Paris] PHP Parse error:  syntax error, unexpected ''.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 14
+[01-Mar-2018 11:51:56 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[01-Mar-2018 11:51:56 Europe/Paris] PHP Notice:  Undefined variable: jeu in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 27
+[01-Mar-2018 11:51:56 Europe/Paris] PHP Parse error:  syntax error, unexpected ''.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 14
+[01-Mar-2018 11:51:57 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[01-Mar-2018 11:51:57 Europe/Paris] PHP Notice:  Undefined variable: jeu in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 27
+[01-Mar-2018 11:51:57 Europe/Paris] PHP Parse error:  syntax error, unexpected ''.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 14
+[01-Mar-2018 11:52:00 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[01-Mar-2018 11:52:00 Europe/Paris] PHP Notice:  Undefined variable: jeu in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 27
+[01-Mar-2018 11:52:00 Europe/Paris] PHP Notice:  Undefined variable: titlePage in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 7
+[01-Mar-2018 11:53:23 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[01-Mar-2018 11:53:23 Europe/Paris] PHP Notice:  Undefined variable: jeu in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 27
+[01-Mar-2018 11:53:23 Europe/Paris] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 17
+[01-Mar-2018 11:53:24 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[01-Mar-2018 11:53:24 Europe/Paris] PHP Notice:  Undefined variable: jeu in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 27
+[01-Mar-2018 11:53:24 Europe/Paris] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 17
+[01-Mar-2018 11:53:35 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[01-Mar-2018 11:53:36 Europe/Paris] PHP Notice:  Undefined variable: jeu in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 27
+[01-Mar-2018 11:53:36 Europe/Paris] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 17
+[01-Mar-2018 11:53:45 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[01-Mar-2018 11:53:45 Europe/Paris] PHP Notice:  Undefined variable: jeu in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 27
+[01-Mar-2018 11:53:45 Europe/Paris] PHP Notice:  Undefined variable: titlePage in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 7
+[01-Mar-2018 12:04:20 Europe/Paris] PHP Parse error:  syntax error, unexpected '$error' (T_VARIABLE) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/controller/frontController.php on line 36
+[01-Mar-2018 12:04:38 Europe/Paris] PHP Parse error:  syntax error, unexpected ''.php'' (T_CONSTANT_ENCAPSED_STRING) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/layout.php on line 19

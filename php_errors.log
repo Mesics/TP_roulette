@@ -305,3 +305,7 @@ Stack trace:
 [01-Mar-2018 01:04:28 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
 [01-Mar-2018 01:04:28 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in Unknown on line 0
 [01-Mar-2018 01:04:28 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[01-Mar-2018 10:24:51 Europe/Paris] PHP Warning:  require_once(bdd.php): failed to open stream: No such file or directory in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/index.php on line 7
+[01-Mar-2018 10:24:51 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required 'bdd.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/index.php on line 7
+[01-Mar-2018 11:37:50 Europe/Paris] PHP Warning:  require_once(bdd.php): failed to open stream: No such file or directory in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/index.php on line 7
+[01-Mar-2018 11:37:50 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required 'bdd.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/index.php on line 7

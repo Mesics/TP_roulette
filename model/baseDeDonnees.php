@@ -1,21 +1,27 @@
+<!--- MACCAGNO Coralie - TP Roulette : Class Base De Données --->
+
+ /****** A ENLEVEEEER *****/
 <?php
 class BaseDeDonnees {
 	
 	private $bdd=null;
-	private $host;
+	private $hote;
+	private $dbname;
 	private $user;
 	private $pwd;
 	
 	/*constructeur de la classe bdd */
-	public function __construct($hote, $user, $pwd)
+	public function __construct($host, $dbname, $user, $pwd)
 	{
-		$this->hote=$hote;
+		$this->hote=$host;
+		$this->dbname=$dbname;
 		$this->user=$user;
 		$this->pwd=$pwd;		
 	}
 	
 	/* Getters */
 	public function getHote(){ return $this->hote;}
+	public function getDbname() { return $this->dbname; }
 	public function getUser() {return $this->user;}
 	public function getPwd() {return $this->pwd;}
 	
@@ -27,7 +33,7 @@ class BaseDeDonnees {
 	/* méthode d'initialisation du PDO */
 	public function connexionBdd(){
 		try{
-			$this->bdd=new PDO('mysql:host='.$this->hote.';dname=p1408199;charset=utf8', $this->user, $this->pwd,array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+			$this->bdd=new PDO('mysql:host='.$this->hote.';dname='.$this->dbname.';charset=utf8', $this->user, $this->pwd,array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 		}catch (Exception $e){
 			die('Erreur connexion : ' . $e->getMessage());
 		}
@@ -35,14 +41,14 @@ class BaseDeDonnees {
 	
 	/* méthode de connexin de l'utilisateur */
 	public function connexionUser($user, $pwd) {
-		
-		/* on sélectionne les données de l'user */
-		$reponse = $this->bdd->query('SELECT * FROM p1408199.Player WHERE name = "'.$user.'";');
-		$data = $reponse->fetch();
-		
+		$errorCo='';
 		
 		if($user != '' and $pwd != '') {
 		/* on vérifie que les champs aient été remplis*/
+		
+		/* on sélectionne les données de l'user */
+		$reponse = $this->bdd->query('SELECT * FROM p1408199.Player WHERE name = "'.$user.'";');
+		$data = $reponse->fetch();		
 			
 			if($data['name'] == $user) {
 			/* on vérifie qu'on a bien une donnée corespondant au nom 
@@ -54,7 +60,6 @@ class BaseDeDonnees {
 					$_SESSION['idUser'] = $data['id'];
 					$_SESSION['user'] = $data['name'];
 					$_SESSION['money'] = $data['money'];
-					$errorCo = 'ok';
 				} else { $errorCo = 'Mot de passe éronné'; }
 				
 			} else { $errorCo = 'Utilisateur inconnu'; }
@@ -70,20 +75,26 @@ class BaseDeDonnees {
 	{
 		$msg=''; 
 		
-		$reqUser = 'SELECT * FROM p1408199.Player WHERE name = ? ';
-		$reponse=$this->bdd->prepare($reqUser);
-		$reponse->execute(array($user1));
+		if($user1 != '' and $pwd1 != '') {
+		/*on vérifie que les champs aient été remplis */
+		
+			$reqUser = 'SELECT * FROM p1408199.Player WHERE name = ? ';
+			$reponse=$this->bdd->prepare($reqUser);
+			$reponse->execute(array($user1));
+				
+			if($reponse->fetch())
+			{
+				$msg='Identifiant déjà utilisé';	
+			}
+			else
+			{
+				$requete='INSERT INTO p1408199.Player(name, password) values(?,?)'; 
+					//on ne rentre que ces 2 valeurs car id auto-incrémenté et money par défaut à 500€
+				$req=$this->bdd->prepare($requete);
+				$req->execute(array($user1, $pwd1));
+			}
 			
-		if($reponse->fetch())
-		{
-			$msg='Identifiant déjà utilisé';	
-		}
-		else
-		{
-			$requete='INSERT INTO p1408199.Player(name, password) values(?,?)';
-			$req=$this->bdd->prepare($requete);
-			$req->execute(array($user1, $pwd1));
-		}
+		} else { $msg='Veuillez remplis tous les champs'; }
 		
 		return $msg;
 	}	
