@@ -134,3 +134,174 @@ Stack trace:
 [28-Feb-2018 17:50:51 Europe/Paris] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/bdd.php on line 76
 [28-Feb-2018 17:53:29 Europe/Paris] PHP Warning:  PDO::prepare() expects parameter 1 to be string, array given in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/bdd.php on line 74
 [28-Feb-2018 17:53:29 Europe/Paris] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/bdd.php on line 76
+[28-Feb-2018 18:10:36 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 18:10:36 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 18:10:36 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 18:10:47 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 2
+[28-Feb-2018 18:10:47 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 18:10:47 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 18:10:52 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 2
+[28-Feb-2018 18:10:52 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 18:10:52 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 18:10:58 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 2
+[28-Feb-2018 18:10:58 Europe/Paris] PHP Notice:  Undefined variable: msg in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 24
+[28-Feb-2018 18:10:58 Europe/Paris] PHP Notice:  Undefined variable: msg in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 24
+[28-Feb-2018 18:10:58 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 18:10:58 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 18:11:01 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 18:11:01 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 18:11:01 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 18:11:06 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 18:11:06 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 18:11:06 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 18:11:06 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 3
+[28-Feb-2018 18:11:06 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 91
+[28-Feb-2018 18:11:06 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 92
+[28-Feb-2018 18:11:06 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 18:11:06 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 18:11:06 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 18:11:06 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 18:11:06 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 18:11:09 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 2
+[28-Feb-2018 18:11:09 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 18:11:09 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 18:11:17 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 3
+[28-Feb-2018 18:11:17 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 91
+[28-Feb-2018 18:11:17 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 92
+[28-Feb-2018 18:11:17 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 18:11:17 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 18:11:17 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 18:11:17 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_fklhns28cm6vv1ga67c4jkhdi4, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 18:11:17 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 19:59:48 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 19:59:48 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 19:59:48 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 19:59:52 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 2
+[28-Feb-2018 19:59:52 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 19:59:52 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 19:59:59 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 2
+[28-Feb-2018 19:59:59 Europe/Paris] PHP Notice:  Undefined variable: msg in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 24
+[28-Feb-2018 19:59:59 Europe/Paris] PHP Notice:  Undefined variable: msg in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 24
+[28-Feb-2018 19:59:59 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 19:59:59 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:04 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 2
+[28-Feb-2018 20:00:04 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:04 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:09 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 20:00:09 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:09 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:12 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 20:00:12 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:12 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:13 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 3
+[28-Feb-2018 20:00:13 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 91
+[28-Feb-2018 20:00:13 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 92
+[28-Feb-2018 20:00:13 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:13 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:13 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 20:00:13 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:13 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:19 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 20:00:19 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:19 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:19 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 3
+[28-Feb-2018 20:00:19 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 91
+[28-Feb-2018 20:00:19 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 92
+[28-Feb-2018 20:00:19 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:19 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:19 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 20:00:19 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:19 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:30 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 3
+[28-Feb-2018 20:00:30 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 91
+[28-Feb-2018 20:00:30 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 92
+[28-Feb-2018 20:00:30 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:30 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:30 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 20:00:30 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:30 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:32 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 20:00:32 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:32 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:33 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 20:00:33 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:33 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:34 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 20:00:34 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:34 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:37 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 2
+[28-Feb-2018 20:00:37 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:37 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:38 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 20:00:38 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:38 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:42 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 20:00:42 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:42 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:50 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 20:00:50 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:50 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 20:00:58 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 20:00:58 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_ga9v7ja87m8hdpbbqeskbpgmq3, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 20:00:58 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 23:42:21 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_0m84cbplc2ifpu8e1jjavnavn4, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[28-Feb-2018 23:42:21 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_0m84cbplc2ifpu8e1jjavnavn4, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 23:42:21 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 23:42:27 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_0m84cbplc2ifpu8e1jjavnavn4, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 2
+[28-Feb-2018 23:42:27 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_0m84cbplc2ifpu8e1jjavnavn4, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 23:42:27 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 23:42:44 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_0m84cbplc2ifpu8e1jjavnavn4, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 2
+[28-Feb-2018 23:42:44 Europe/Paris] PHP Notice:  Undefined variable: msg in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 24
+[28-Feb-2018 23:42:44 Europe/Paris] PHP Notice:  Undefined variable: msg in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 24
+[28-Feb-2018 23:42:44 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_0m84cbplc2ifpu8e1jjavnavn4, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 23:42:44 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 23:43:09 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_0m84cbplc2ifpu8e1jjavnavn4, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 2
+[28-Feb-2018 23:43:09 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_0m84cbplc2ifpu8e1jjavnavn4, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 23:43:09 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[28-Feb-2018 23:43:22 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_0m84cbplc2ifpu8e1jjavnavn4, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 2
+[28-Feb-2018 23:43:22 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_0m84cbplc2ifpu8e1jjavnavn4, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[28-Feb-2018 23:43:22 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[01-Mar-2018 01:03:51 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[01-Mar-2018 01:03:51 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[01-Mar-2018 01:03:51 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[01-Mar-2018 01:04:00 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 2
+[01-Mar-2018 01:04:00 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[01-Mar-2018 01:04:00 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[01-Mar-2018 01:04:07 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 2
+[01-Mar-2018 01:04:07 Europe/Paris] PHP Notice:  Undefined variable: msg in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 24
+[01-Mar-2018 01:04:07 Europe/Paris] PHP Notice:  Undefined variable: msg in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/inscription.php on line 24
+[01-Mar-2018 01:04:07 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[01-Mar-2018 01:04:07 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[01-Mar-2018 01:04:12 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[01-Mar-2018 01:04:12 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[01-Mar-2018 01:04:12 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[01-Mar-2018 01:04:16 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[01-Mar-2018 01:04:16 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[01-Mar-2018 01:04:16 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[01-Mar-2018 01:04:16 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 3
+[01-Mar-2018 01:04:16 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 91
+[01-Mar-2018 01:04:16 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 92
+[01-Mar-2018 01:04:16 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[01-Mar-2018 01:04:16 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[01-Mar-2018 01:04:17 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[01-Mar-2018 01:04:17 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[01-Mar-2018 01:04:17 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[01-Mar-2018 01:04:17 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[01-Mar-2018 01:04:17 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[01-Mar-2018 01:04:17 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[01-Mar-2018 01:04:17 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 3
+[01-Mar-2018 01:04:17 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 91
+[01-Mar-2018 01:04:17 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 92
+[01-Mar-2018 01:04:17 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[01-Mar-2018 01:04:17 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[01-Mar-2018 01:04:17 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[01-Mar-2018 01:04:17 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[01-Mar-2018 01:04:17 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[01-Mar-2018 01:04:28 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 3
+[01-Mar-2018 01:04:28 Europe/Paris] PHP Notice:  Undefined index: user in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 91
+[01-Mar-2018 01:04:28 Europe/Paris] PHP Notice:  Undefined index: money in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/roulette.php on line 92
+[01-Mar-2018 01:04:28 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[01-Mar-2018 01:04:28 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[01-Mar-2018 01:04:28 Europe/Paris] PHP Warning:  session_start(): open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in /home/UNIV-LYON1/p1408199/public_html/TP_roulette/index.php on line 5
+[01-Mar-2018 01:04:28 Europe/Paris] PHP Warning:  Unknown: open(/tmp/sess_3ub4aka55mmj43d8cfkq2472k6, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[01-Mar-2018 01:04:28 Europe/Paris] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0

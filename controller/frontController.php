@@ -1,9 +1,8 @@
-<!--  MACCAGNO Coralie - TP Roulette -->
+<!--- MACCAGNO Coralie - TP Roulette : Controller principal --->
 
 
 <?php 
 	session_start();
-	
 	require_once('bdd.php');
 	
 	/* connexion à la base de données */
@@ -11,6 +10,8 @@
 	$basedonnee->connexionBdd();
 
 	$error="";
+	$module='connexion';
+	
 	
 	/* Quand on appuie sur le bouton déconnexion de la page du 
 	jeu :  on vide toutes les sessions */
@@ -20,10 +21,12 @@
 		unset($_SESSION['money']);
 	}
 	
+	
 	/* si le joueur est déjà connecté on le redirige directement
 		sur la page du jeu */
 	if (isset($_SESSION['user']))
-		header('Location: roulette.php');
+		$module='roulette';
+	
 	
 	/* vérification de l'identité */
 	if(isset($_POST['submit']))
@@ -34,8 +37,7 @@
 		else 
 			header('Location: roulette.php');
 	}
-?>
-
-
-
-
+	
+	
+	
+	include('../view/layout.php');

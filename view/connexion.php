@@ -1,0 +1,20 @@
+<!--- MACCAGNO Coralie - TP Roulette : page connexion --->
+
+
+<h1>Jeu de la Roulette</h1>
+<h2>Connexion</h2>
+
+<form method="post" action="index.php">
+	<input type="text" name="user" placeholder="Identifiant" autofocus /><br/>
+	<input type="password" name="passwd" placeholder="Mot de passe" /><br/>
+	
+	<?php if($error!=""): ?>
+		<p id='error'> <?= $error ?> </p>
+	<?php endif ?>
+	
+	<input type="submit" value="Envoyer" name="submit" />
+	<input type="reset" value="Effacer" name="reset" />
+</form>
+
+
+<p id='link'>Pas encore membre ? Viens t'<a href="inscription.php">inscrire</a>... </p>
