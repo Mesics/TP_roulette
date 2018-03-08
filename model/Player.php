@@ -17,4 +17,8 @@ class Player {
 	public function getName() { return $this->name; }
 	public function getId()	{return $this->id; }
 	public function getMoney() { return $this->money; } 
+	
+	//mettre des setters ??? NAME ET ID 
+	public function setName()
+	
 }

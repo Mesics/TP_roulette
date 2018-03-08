@@ -7,11 +7,14 @@ class GameController {
 	
 	/* constructeur */
 	public function __construct(){
-		
-		
-		
-		
+		try{
+			$this->bdd=new PDO('mysql:host=localhost;dname=p1408199;charset=utf8', 'p1408199', '216169',
+				array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+		}catch (Exception $e){
+			die('Erreur connexion : ' . $e->getMessage());
+		}
 	}
+	
 	
 	/* getters */
 	
@@ -23,7 +26,7 @@ class GameController {
 	public function verifMise($mise){
 		$msg='';
 		
-		if($mise=='')
+		if($mise=='' || $mise==0)
 			$msg='Veuillez rentrer une mise valide':
 		else if  ($mise>$_SESSION['money'])
 			$msg='T\'as pas assez de fric, dommage...';		

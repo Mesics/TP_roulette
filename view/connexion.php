@@ -8,7 +8,7 @@
 	<input type="text" name="user" placeholder="Identifiant" autofocus /><br/>
 	<input type="password" name="passwd" placeholder="Mot de passe" /><br/>
 	
-	<?php if($error!=""): ?>
+	<?php if($error!=''): ?>
 		<p id='error'> <?= $error ?> </p>
 	<?php endif ?>
 	
