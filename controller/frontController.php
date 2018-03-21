@@ -43,7 +43,6 @@ else
 /***** CONNEXION JOUEUR *****/
 if($module=='connexion')
 {
-	//include('../view/connexion.php');
 	/* vérification de l'identité */
 	if(isset($_POST['submitCo']))
 	{

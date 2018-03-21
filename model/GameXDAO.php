@@ -1,10 +1,10 @@
-<!--- MACCAGNO Coralie - TP Roulette : Class Game DAO --->
+<!--- MACCAGNO Coralie - TP Roulette : Class Game DAO *** tentative d'archi XML --->
 
 <?php
 
-/* REVOIR CETTE PAGE !!!*/
 
 Class GameDAO {
+	/*
 	private $bdd; // objet PDO
 	
 	public function __construct() {
@@ -14,8 +14,9 @@ Class GameDAO {
 			die('Erreur connexion : ' . $e->getMessage());
 		}
 		
-	}
-
+	} */
+	
+	/*
 	public function getByIdDate($i, $d)
 	{
 		$sql='SELECT * from p1408199.Game WHERE id=? and date=?';
@@ -25,21 +26,21 @@ Class GameDAO {
 		$game = new Game($data['id'], $data['date'], $data['bet'], $data['profit']);
 		
 		return $game ; 
-	}
+	} */
 
 	
-	/*méthode ajout de partie dans la bdd */
+	/*méthode ajout de partie dans la bdd */ /*
 	public function addGame($user, $bet, $profit) 
 	{
-		/* on, récupère l'id du joueur */
+		// on, récupère l'id du joueur
 		$rep=$this->bdd->query('SELECT id FROM p1408199.Player where name="'.$user.'";');
 		$data=$rep->fetch();
 
 		
-		/* on récupère la date courante */
+		// on récupère la date courante
 		$datetime=date("Y-m-d H:i:s");
 
-		/* on ajout le tout dans la base de données */
+		//		on ajout le tout dans la base de données
 		$requete= 'INSERT INTO p1408199.Game(Player, date, bet, profit) 
 			VALUES(:t_player, :t_date, :t_bet, :t_profit);';
 		$req=$this->bdd->prepare($requete);
@@ -48,7 +49,9 @@ Class GameDAO {
 			':t_date' => $datetime,
 			':t_bet' => $bet,
 			':t_profit' => $profit ));
-	}
+	} */
+	
+	public function addGame() // ...
 	
 
 
