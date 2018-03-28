@@ -17,4 +17,4 @@
 </form>
 
 
-<p id='link'>Pas encore membre ? Viens t'<a href="inscription.php">inscrire</a>... </p>
+<p id='link'>Pas encore membre ? Viens t'<a href="../controller/frontController.php?inscr">inscrire</a>... </p>

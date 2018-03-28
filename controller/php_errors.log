@@ -93,3 +93,63 @@
 [08-Mar-2018 12:04:21 Europe/Paris] PHP Notice:  Undefined variable: response in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/model/PlayerDAO.php on line 45
 [08-Mar-2018 12:04:21 Europe/Paris] PHP Fatal error:  Call to a member function execute() on a non-object in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/model/PlayerDAO.php on line 45
 [08-Mar-2018 12:07:19 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP_roulette_Maccagno/view/roulette.php on line 6
+[22-Mar-2018 16:01:50 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP/view/roulette.php on line 6
+[22-Mar-2018 16:02:03 Europe/Paris] PHP Fatal error:  Class 'GameController' not found in /home/UNIV-LYON1/p1408199/public_html/TP/controller/frontController.php on line 100
+[23-Mar-2018 16:46:47 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP/view/roulette.php on line 6
+[28-Mar-2018 16:08:18 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP/view/roulette.php on line 6
+[28-Mar-2018 16:08:54 Europe/Paris] PHP Fatal error:  Class 'GameController' not found in /home/UNIV-LYON1/p1408199/public_html/TP/controller/frontController.php on line 101
+[28-Mar-2018 16:10:51 Europe/Paris] PHP Parse error:  syntax error, unexpected ':' in /home/UNIV-LYON1/p1408199/public_html/TP/controller/GameController.php on line 30
+[28-Mar-2018 16:11:14 Europe/Paris] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/UNIV-LYON1/p1408199/public_html/TP/controller/GameController.php on line 54
+[28-Mar-2018 16:11:51 Europe/Paris] PHP Notice:  Use of undefined constant msg - assumed 'msg' in /home/UNIV-LYON1/p1408199/public_html/TP/controller/GameController.php on line 34
+[28-Mar-2018 16:12:56 Europe/Paris] PHP Notice:  Use of undefined constant msg - assumed 'msg' in /home/UNIV-LYON1/p1408199/public_html/TP/controller/GameController.php on line 34
+[28-Mar-2018 16:15:24 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP/view/roulette.php on line 6
+[28-Mar-2018 16:16:28 Europe/Paris] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'profit' cannot be null' in /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php:50
+Stack trace:
+#0 /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php(50): PDOStatement->execute(Array)
+#1 /home/UNIV-LYON1/p1408199/public_html/TP/controller/frontController.php(136): GameDAO->addGame('Didi', '45', NULL)
+#2 {main}
+  thrown in /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php on line 50
+[28-Mar-2018 16:25:42 Europe/Paris] PHP Notice:  Undefined variable: gain in /home/UNIV-LYON1/p1408199/public_html/TP/controller/GameController.php on line 59
+[28-Mar-2018 16:25:42 Europe/Paris] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'profit' cannot be null' in /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php:50
+Stack trace:
+#0 /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php(50): PDOStatement->execute(Array)
+#1 /home/UNIV-LYON1/p1408199/public_html/TP/controller/frontController.php(136): GameDAO->addGame('Didi', '50', NULL)
+#2 {main}
+  thrown in /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php on line 50
+[28-Mar-2018 16:26:28 Europe/Paris] PHP Notice:  Undefined variable: gain in /home/UNIV-LYON1/p1408199/public_html/TP/controller/GameController.php on line 59
+[28-Mar-2018 16:26:28 Europe/Paris] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'profit' cannot be null' in /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php:50
+Stack trace:
+#0 /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php(50): PDOStatement->execute(Array)
+#1 /home/UNIV-LYON1/p1408199/public_html/TP/controller/frontController.php(136): GameDAO->addGame('Didi', '20', NULL)
+#2 {main}
+  thrown in /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php on line 50
+[28-Mar-2018 16:29:32 Europe/Paris] PHP Notice:  Undefined variable: gain in /home/UNIV-LYON1/p1408199/public_html/TP/controller/GameController.php on line 59
+[28-Mar-2018 16:29:32 Europe/Paris] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'profit' cannot be null' in /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php:50
+Stack trace:
+#0 /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php(50): PDOStatement->execute(Array)
+#1 /home/UNIV-LYON1/p1408199/public_html/TP/controller/frontController.php(136): GameDAO->addGame('Didi', '2', NULL)
+#2 {main}
+  thrown in /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php on line 50
+[28-Mar-2018 16:30:25 Europe/Paris] PHP Notice:  Undefined variable: gain in /home/UNIV-LYON1/p1408199/public_html/TP/controller/GameController.php on line 59
+[28-Mar-2018 16:30:25 Europe/Paris] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'profit' cannot be null' in /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php:50
+Stack trace:
+#0 /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php(50): PDOStatement->execute(Array)
+#1 /home/UNIV-LYON1/p1408199/public_html/TP/controller/frontController.php(136): GameDAO->addGame('Didi', '45', NULL)
+#2 {main}
+  thrown in /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php on line 50
+[28-Mar-2018 16:32:56 Europe/Paris] PHP Notice:  Use of undefined constant p1408199 - assumed 'p1408199' in /home/UNIV-LYON1/p1408199/public_html/TP/controller/frontController.php on line 7
+[28-Mar-2018 16:33:13 Europe/Paris] PHP Notice:  Undefined variable: result in /home/UNIV-LYON1/p1408199/public_html/TP/view/roulette.php on line 6
+[28-Mar-2018 16:33:17 Europe/Paris] PHP Notice:  Undefined variable: gain in /home/UNIV-LYON1/p1408199/public_html/TP/controller/GameController.php on line 59
+[28-Mar-2018 16:33:17 Europe/Paris] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'profit' cannot be null' in /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php:50
+Stack trace:
+#0 /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php(50): PDOStatement->execute(Array)
+#1 /home/UNIV-LYON1/p1408199/public_html/TP/controller/frontController.php(136): GameDAO->addGame('Didi', '50', NULL)
+#2 {main}
+  thrown in /home/UNIV-LYON1/p1408199/public_html/TP/model/GameDAO.php on line 50
+[28-Mar-2018 16:34:28 Europe/Paris] PHP Notice:  Undefined variable: gain in /home/UNIV-LYON1/p1408199/public_html/TP/controller/GameController.php on line 59
+[28-Mar-2018 16:39:40 Europe/Paris] PHP Notice:  Undefined variable: gain in /home/UNIV-LYON1/p1408199/public_html/TP/controller/GameController.php on line 59
+[28-Mar-2018 16:39:40 Europe/Paris] PHP Notice:  Undefined index:  in /home/UNIV-LYON1/p1408199/public_html/TP/controller/frontController.php on line 125
+[28-Mar-2018 16:40:21 Europe/Paris] PHP Notice:  Undefined variable: gain in /home/UNIV-LYON1/p1408199/public_html/TP/controller/GameController.php on line 59
+[28-Mar-2018 16:40:40 Europe/Paris] PHP Parse error:  syntax error, unexpected '/' in /home/UNIV-LYON1/p1408199/public_html/TP/controller/frontController.php on line 125
+[28-Mar-2018 16:50:20 Europe/Paris] PHP Notice:  Undefined variable: gain in /home/UNIV-LYON1/p1408199/public_html/TP/controller/GameController.php on line 59
+[28-Mar-2018 16:52:57 Europe/Paris] PHP Notice:  Undefined variable: gain in /home/UNIV-LYON1/p1408199/public_html/TP/controller/GameController.php on line 59
