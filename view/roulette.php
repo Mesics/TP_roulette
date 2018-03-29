@@ -3,7 +3,7 @@
 	
 <main>			
 	<?php
-		if($result!='')
+		if($result!="")
 			echo "<p>" . $result ."</p>";
 	?>
 	
@@ -30,5 +30,5 @@
 		<input type="submit" id='jouer' value="Jouer" name="play" />
 	</form>
 	
-	<p id='link'><a href="../index.php?deco">Deconnexion</a></p>
+	<p id='link'><a href="../controller/frontController.php?deco">Deconnexion</a></p>
 </main>	

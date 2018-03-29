@@ -4,14 +4,15 @@
 /* rôle du controller -> vérifier que les infos soient bonnes (isset $_POST , etc...) */
 
 
-
+session_name('p1408199');
 session_start();
 require_once('../model/PlayerDAO.php');
 require_once('../model/GameDAO.php');
-
+require_once('GameController.php');
 
 $error='';
 $module='connexion';
+
 
 if($module=='connexion')
 	$titlePage=' - Connexion';
@@ -30,11 +31,16 @@ if (isset($_GET['deco'])){
 }
 
 
+
 /* si le joueur est déjà connecté on le redirige
 	sur la page du jeu */
 if (isset($_SESSION['user']))
 	$module='roulette';
 /* si il n'y a pas de session ouverte on redirige vers l'acceuil */
+else if(isset($_GET['inscr']))
+{
+	$module='inscription';
+}
 else
 	$module='connexion';
 
@@ -43,7 +49,6 @@ else
 /***** CONNEXION JOUEUR *****/
 if($module=='connexion')
 {
-	//include('../view/connexion.php');
 	/* vérification de l'identité */
 	if(isset($_POST['submitCo']))
 	{
@@ -81,7 +86,7 @@ else if($module=='inscription')
 					$error = ($playerDAO->connect($_POST['user'], $_POST['passwd']));
 					if($error=='')	$module='roulette';
 				}
-			}else $error='Veuillez entre votre mot de passe';
+			}else $error='Veuillez entrer votre mot de passe';
 		} else $error='Veuillez entrer votre identifiant';
 	}
 }
@@ -90,13 +95,14 @@ else if($module=='inscription')
 else if($module=='roulette')
 {
 
-	$error='';
-	$result='';
-	//$tirageR=0;
-	$gain=0;
+	$error="";
+	$result="";
+
+	$profit=0;
 
 	if(isset($_POST['play']))
 	{ //quand on appuie sur le bouton jouer ...
+		$result="";
 		
 		$gameC = new GameController();
 		$error=$gameC->verifMise($_POST['mise']);
@@ -106,25 +112,33 @@ else if($module=='roulette')
 			$choix='';
 			
 			/* on détermine quel est le mode de pari (numéro ou parité) */
-			if(isset($_POST['numero']) && $_POST['numero']!="")	$choix='numero';
+			if(isset($_POST['numero']) && $_POST['numero']!="")	
+			{
+				$choix='numero';
+				$pari=$_POST['numero'];
+			}
 			else 
 			{
-				if( isset($_POST['parite']) )	$choix='parite';
+				if( isset($_POST['parite']) )
+				{
+					$choix='parite';
+					$pari=$_POST['parite'];
+				}
 				else	$error='Il faut parier aussi... !'; //si pari ni sur numero ni sur parité
 			}
 			
 			/* on lance la roulette ! *roulement de tambour* */
-			if($choix!='')
+			if($choix!="")
 			{
-				$gain=$gameC->gain($_POST[$choix]);
-				
-				if($gain>0)
-					$result='Bravo c\'est gagné !';
+			$profit=$gameC->gain($_POST[$choix], $_POST['mise'], $pari);
+
+				if($profit>0)
+					$result='Bravo c\'est gagné ! <br/> Tu a gagné '. $profit;
 				else
-					$result='Ouuups, c\'est perdu... retente ta chance ;)';
+					$result='Ouuups, c\'est perdu... retente ta chance ;) <br/> Tu as perdu '.$profit;
 				
 				/* mise à jour de la session */
-				$_SESSION['money']+=$gain;
+				$_SESSION['money']+=$profit;
 				
 				/* mise à jour de l'argent du joueur dans la bdd */
 				$player = new PlayerDAO();
@@ -132,7 +146,7 @@ else if($module=='roulette')
 				
 				/* ajout de la partie dans la base de données */
 				$game = new GameDAO();
-				$game->addGame($_SESSION['user'],$_POST['mise'],$gain);
+				$game->addGame($_SESSION['user'],$_POST['mise'],$profit);
 			}
 		}	
 

@@ -24,31 +24,39 @@ class GameController {
 	
 	/* méthode de vérification formulaire (mises correctes) */
 	public function verifMise($mise){
-		$msg='';
+		$msg="";
 		
 		if($mise=='' || $mise==0)
-			$msg='Veuillez rentrer une mise valide':
+			$msg="Veuillez rentrer une mise valide";
 		else if  ($mise>$_SESSION['money'])
-			$msg='T\'as pas assez de fric, dommage...';		
+			$msg="T'as pas assez de fric, dommage...";		
 	
-		return msg;
+		return $msg;
 	}
 	
 	/* méthode de gestion des gains */
-	public function gain($mode){
+	public function gain($mode, $bet, $pari){
 		/* tirage au sort */
 		$tirageR=rand(1,36);
 		
-		if($mode=='numero')
+		if($mode=="numero")
 		{
 			/* on vérifie si le numéro misé correspond au numéro tiré */
-			if($_POST['numero']==$tirageR)
-				$gain=$_POST['mise']*35;
+			if($pari==$tirageR)
+				$gain=$bet*35;
 			else
-				$gain=-$_POST['mise'];
-			
-			
-			
+				$gain=-$bet;	
+		}
+		else 
+		{
+			/* on vérifie si le numéro misé correspond à la parité tirée */
+			if( ($pari=='pair' && $tirageR%2==0) || ($pari=='impair' && $tirageR%2==1))
+				$gain=$bet*2;
+			else
+				$gain=-$bet;				
+		}
+		
+		return $gain;
 	}
 	
 }

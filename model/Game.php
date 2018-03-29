@@ -22,6 +22,6 @@ class Game {
 	public function getProfit() { return $this->profit; }
 	
 	
-	/* pas besoin de setter ?? */
+	/* pas besoin de setter */
 	
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Joueurs>
+	<player>
+		<id>1</id>
+		<name>Coralie</name>
+		<password>1234</password>
+		<money>500</money>
+	</player>
+	<player>
+		<id>2</id>
+		<name>Didi</name>
+		<password>4321</password>
+		<money>450</money>
+	</player>	
+
+</Joueurs>

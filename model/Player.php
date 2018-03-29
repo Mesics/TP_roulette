@@ -19,6 +19,13 @@ class Player {
 	public function getMoney() { return $this->money; } 
 	
 	//mettre des setters ??? NAME ET ID 
-	public function setName()
+	public function setName($n)
+	{
+		$this->name=$n;
+	}
+	public function setID($id)
+	{
+		$this->id=$id;
+	}		
 	
 }
