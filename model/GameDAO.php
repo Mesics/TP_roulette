@@ -2,7 +2,8 @@
 
 <?php
 
-/* REVOIR CETTE PAGE !!!*/
+require_once('PlayerDAO.php');
+require_once('Game.php');
 
 Class GameDAO {
 	private $bdd; // objet PDO
@@ -32,24 +33,25 @@ Class GameDAO {
 	public function addGame($user, $bet, $profit) 
 	{
 		/* on, récupère l'id du joueur */
-		$rep=$this->bdd->query('SELECT id FROM p1408199.Player where name="'.$user.'";');
-		$data=$rep->fetch();
-
+		$playerDAO = new PlayerDAO();
+		$player=$playerDAO->getByName($user);
 		
 		/* on récupère la date courante */
 		$datetime=date("Y-m-d H:i:s");
 
 		/* on ajout le tout dans la base de données */
-		$requete= 'INSERT INTO p1408199.Game(Player, date, bet, profit) 
+		$requete= 'INSERT INTO p1408199.Game(player, date, bet, profit) 
 			VALUES(:t_player, :t_date, :t_bet, :t_profit);';
 		$req=$this->bdd->prepare($requete);
 		$req->execute(array(
-			':t_player' => $data['id'],
+			':t_player' => $player->getId(),
 			':t_date' => $datetime,
 			':t_bet' => $bet,
 			':t_profit' => $profit ));
 	}
 	
+
+}
 
 
 

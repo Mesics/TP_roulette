@@ -2,7 +2,10 @@
 
 <!-- DAO = INTERFACE ENTRE PHP ET BASE DE DONNEES -->
 <?php
+require_once('Player.php');
+
 class PlayerDAO {
+	
 	private $bdd; // objet PDO
 	
 	public function __construct()
@@ -98,8 +101,5 @@ class PlayerDAO {
 			':t_user' => $u
 			));		
 	}
-	
-	
-	
 	
 }

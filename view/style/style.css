@@ -3,31 +3,36 @@
 	font-family:"PokerKings";
 	src:url('../police/PokerKings-Regular');
 }
-
-body
+@font-face
 {
-	text-align:center;
-	font-family:calibri, arial;
-
-	background-image: url("roulette.png");
-	background-color: #007B00;
+	font-family:"Ubuntu";
+	src:url('../police/UBUNTU-R.TTF');
+}
 	
+body
+{	
+	font-family:Ubuntu, Calibri;
+	text-align:center;
+
 }
 
 h1
 {
 	font-family:PokerKings, Calibri;
 	font-size:2.5em;
+	color:white;
+	
 	padding: 20px 0;
 	margin:0;
-	/* background-color: #007B00; */
+	background-color: #007B00;
 	
+	text-align:left;
+	padding-left:10px;
 	margin-bottom:50px;
 }
-
 h2
 {
-	margin-bottom:10px;
+	font-size:1.5em;
 }
 form input
 {
@@ -58,4 +63,55 @@ p a
 p a:hover
 {
 	border-bottom:none;
+}
+
+
+form p
+{
+	font-size:0.8em;
+	color:red;
+	margin:0;
+	margin-left:50px;
+}
+
+
+h3
+{
+	font-weight:normal;
+}
+
+
+#conteneur_form
+{
+	display:flex;
+	flex-direction:row;
+	
+	justify-content: space-around;
+	
+	margin: 50px 20%;
+}
+div > label
+{
+	width:150px;
+}
+
+
+#mise
+{
+	margin:0;
+}
+form label label
+{
+	float:left;
+	margin-left:20px;
+}
+
+form label:first-child
+{
+	margin-top:5px;
+}
+
+#jouer
+{
+	border-radius:5px;
 }

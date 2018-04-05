@@ -1,7 +1,6 @@
 <!--- MACCAGNO Coralie - TP Roulette : page connexion --->
 
 
-<h1>Jeu de la Roulette</h1>
 <h2>Connexion</h2>
 
 <form method="post" action="../controller/frontController.php">

@@ -8,7 +8,7 @@
 	?>
 	
 	<h2><?= $_SESSION['user'] ?></h2>
-	<p><?= $_SESSION['money'] ?>€<php>
+	<p><?= $_SESSION['money'] ?>€<p>
 
 	
 	<form method="post" action="frontController.php">
@@ -19,8 +19,18 @@
 			</label>
 			<p>ou</p>
 			<label>Mise sur la parité<br/>
-				<label><input type="radio" name="parite" value="pair">Pair</label><br>
-				<label><input type="radio" name="parite" value="impair">Impair</label><br>
+				<table>
+					<tr>
+						<td>
+							<label><input type="radio" name="parite" value="pair">Pair</label><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label><input type="radio" name="parite" value="impair">Impair</label><br>
+						</td>
+					</tr>
+				</table>
 			<label>
 		</div>
 		<?php
